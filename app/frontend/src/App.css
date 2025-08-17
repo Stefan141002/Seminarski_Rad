@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  border-top: 6px solid #1a2e35; /* navy blue naglasak */
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a2e35;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.2s;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #3d9970; /* maslinasto zelena */
+}
+
+.add-btn {
+  background: #3d9970;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #2e7d57;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f2f6;
+  align-items: center;
+  transition: background 0.2s, transform 0.2s, opacity 0.3s ease-in-out;
+}
+
+.todo-item:hover {
+  background: #f9fafb;
+  transform: scale(1.02);
+}
+
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+.todo-text {
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #b71c1c;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #ff5252;
+}
