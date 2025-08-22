@@ -40,6 +40,11 @@ services:
     restart: always
     depends_on:
       - backend
+    healthcheck:                     # healthcheck za frontend
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     networks:
       - seminarski_net
 

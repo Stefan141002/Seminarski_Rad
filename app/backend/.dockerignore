@@ -1,6 +1,22 @@
+# Ignoriši node_modules jer se instališu unutar containera
 node_modules
-.git
-npm-debug.log
-.env
-dist
 
+# Log fajlovi
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment fajlovi (kopiraju se kroz docker-compose env_file)
+.env
+backend.env
+
+# Docker fajlovi
+Dockerfile
+.dockerignore
+
+# Lokalna baza (ako koristiš SQLite ili slično)
+db
+
+# Git i ostalo
+.git
+.gitignore
